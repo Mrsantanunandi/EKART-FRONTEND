@@ -1,10 +1,3 @@
-Got it 👍
-Below is a **clean, properly formatted, GitHub-ready README**.
-No `**` symbols are used, and important text is kept bold using proper Markdown headings and clear structure.
-You can **directly paste this into your `README.md` file**.
-
----
-
 # 🛒 Ekart – Full Stack E-Commerce Application
 
 ## 🔗 Live Links
