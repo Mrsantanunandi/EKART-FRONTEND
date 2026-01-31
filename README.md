@@ -1,16 +1,243 @@
-# React + Vite
+Got it 👍
+Below is a **clean, properly formatted, GitHub-ready README**.
+No `**` symbols are used, and important text is kept bold using proper Markdown headings and clear structure.
+You can **directly paste this into your `README.md` file**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 🛒 Ekart – Full Stack E-Commerce Application
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Links
 
-## React Compiler
+**Frontend (Netlify)**
+[https://frolicking-starburst-33437b.netlify.app/](https://frolicking-starburst-33437b.netlify.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Backend API (AWS – Elastic Beanstalk)**
+Successfully deployed and running
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 About the Project
+
+Ekart is a production-ready full-stack e-commerce web application built using React for the frontend and Spring Boot for the backend.
+
+The application follows industry-level security practices and supports role-based access control, secure online payments, email verification, and a complete admin analytics dashboard.
+
+This project demonstrates real-world implementation of authentication, authorization, cloud image storage, payment gateways, database management, and cloud deployment on AWS.
+
+---
+
+## 🧑‍💻 Tech Stack
+
+### Frontend
+
+* React (Vite)
+* Redux Toolkit
+* Axios
+* Tailwind CSS
+* ShadCN UI
+* Chart libraries for admin analytics
+* Netlify for deployment
+
+### Backend
+
+* Spring Boot
+* Spring Security
+* JWT Authentication
+* Hibernate / JPA
+* PostgreSQL Database
+* Razorpay Payment Gateway
+* Cloudinary Image Storage
+* AWS Elastic Beanstalk deployment
+
+---
+
+## 🔐 Security and Authentication
+
+* JWT-based authentication
+* Role-based authorization (USER and ADMIN)
+* Password encryption using BCrypt
+* Email verification during user signup
+* OTP-based password reset system
+* Stateless session management
+* Protected REST APIs using Spring Security
+* Secure Razorpay payment authentication
+
+---
+
+## ✨ Application Features
+
+### User Features
+
+* User registration with email verification
+* Secure login using JWT
+* Encrypted password storage
+* Forgot password and OTP-based reset
+* Update personal profile details
+* Upload profile image using Cloudinary
+* Browse available products
+* Add products to cart
+* Secure checkout using Razorpay
+* View order history
+* Track personal orders
+
+---
+
+### Admin Features
+
+* Admin authentication and authorization
+* Admin dashboard with analytics
+* View total users, orders, and sales
+* Graph-based sales and order visualization
+* Add new products
+* Update existing product details
+* Delete products
+* Upload product images using Cloudinary
+* View all user profiles and details
+* Manage and view all user orders
+
+---
+
+## 📊 Admin Dashboard Analytics
+
+* Total sales overview
+* Total orders count
+* User growth tracking
+* Graphical representation of orders and revenue
+* Fully protected admin routes
+
+---
+
+## 💳 Payment Integration
+
+* Razorpay payment gateway integration
+* Secure order creation and verification
+* Backend payment signature verification
+* Transaction-safe order placement
+
+---
+
+## 🖼 Image Upload System
+
+* Cloudinary integration
+* User profile image upload
+* Product image upload
+* Secure cloud storage
+* Optimized image delivery
+
+---
+
+## 🗄 Database
+
+* PostgreSQL production database
+* JPA and Hibernate ORM
+* Optimized entity relationships
+* Secure and scalable schema design
+
+---
+
+## ⚙️ Environment Variables
+
+### Frontend (.env)
+
+```env
+VITE_URL=https://your-backend-api-url
+VITE_RAZORPAY_KEY=your_razorpay_key
+```
+
+### Backend (application.properties)
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/ekart
+spring.datasource.username=your_db_username
+spring.datasource.password=your_db_password
+
+jwt.secret=your_jwt_secret
+
+cloudinary.cloud-name=your_cloud_name
+cloudinary.api-key=your_api_key
+cloudinary.api-secret=your_api_secret
+
+razorpay.key=your_razorpay_key
+razorpay.secret=your_razorpay_secret
+```
+
+---
+
+## 🚀 Deployment Details
+
+### Frontend
+
+* Platform: Netlify
+* Build command: npm run build
+* Publish directory: dist
+* Environment variables configured in Netlify dashboard
+
+### Backend
+
+* Platform: AWS Elastic Beanstalk
+* Spring Boot JAR deployment
+* PostgreSQL database
+* Environment variables configured on AWS
+* Fully live and production ready
+
+---
+
+## 🧪 Run the Project Locally
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+mvn clean install
+java -jar target/ekart.jar
+```
+
+---
+
+## 📁 Frontend Project Structure
+
+```bash
+src/
+├── components/
+├── pages/
+├── redux/
+├── axiosWithJwt.js
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+* Full-stack application architecture
+* JWT authentication with Spring Security
+* Razorpay payment gateway integration
+* Secure email verification system
+* Cloudinary image handling
+* Admin dashboard analytics
+* PostgreSQL database management
+* AWS and Netlify deployment
+* Production-grade security practices
+
+---
+
+## 👨‍🎓 Author
+
+Santanu Nandi
+B.Tech in Computer Science and Engineering
+
+---
+
+## ⭐ Support
+
+If you find this project helpful or impressive, please give the repository a star on GitHub.
+Your support is appreciated and motivating.
+
