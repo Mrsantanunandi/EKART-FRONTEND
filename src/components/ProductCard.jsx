@@ -1,6 +1,6 @@
 import { ShoppingCart } from "lucide-react"
 import { Button } from "./ui/Button"
-import { Skeleton } from "./ui/skeleton"
+import { Skeleton } from "./ui/Skeleton"
 import axios from "../axiosWithJwt";
 import { toast } from "sonner"
 import { useDispatch } from "react-redux"
