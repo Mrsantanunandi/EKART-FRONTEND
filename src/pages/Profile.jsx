@@ -74,6 +74,11 @@ export default function Profile() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Guard clause to prevent "undefined" in URL
+  if (!user?.id && !id) {
+    toast.error("User ID missing. Try logging in again.");
+    return;
+   }
     try {
       const payload = {
         username: updateUser.username,
@@ -92,12 +97,7 @@ export default function Profile() {
       }
 
       const res = await axios.put(
-        "/user/update-user",
-        formData,
-        {
-          transformRequest: (data) => data,
-        }
-      );
+        `/user/update-user/${user.id || id}`,formData);
 
 
       toast.success(res.data.message);
