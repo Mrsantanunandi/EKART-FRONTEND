@@ -5,9 +5,9 @@ import { toast } from "sonner";
 import { setAllUsers } from "@/redux/userSlice"; 
 
 import axios from "../../axiosWithJwt";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
+import { Label } from "@/components/ui/Label";
 import { ArrowLeft } from "lucide-react";
 import UserLogo from "../../assets/UserLogo.jpg";
 
