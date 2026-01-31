@@ -7,7 +7,7 @@ import { clearCart } from "@/redux/productSlice";
 import { persistor } from "@/redux/store";
 
 const axiosWithJwt = axios.create({
-  baseURL: import.meta.env.VITE_URL,
+  baseURL: "https://frolicking-starburst-33437b.netlify.app/api",
 });
 
 // ================= REQUEST INTERCEPTOR =================
