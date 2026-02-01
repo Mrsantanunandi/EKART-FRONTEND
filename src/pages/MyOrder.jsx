@@ -13,7 +13,7 @@ export default function MyOrder() {
             const token = localStorage.getItem("token");
 
             const res = await axios.get(
-                `${import.meta.env.VITE_URL}/my-order`,
+                "/my-order",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
