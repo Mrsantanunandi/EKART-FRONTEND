@@ -57,7 +57,7 @@ const AdminProducts = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `${import.meta.env.VITE_URL}/product/allProducts`
+          "/product/allProducts"
         );
         dispatch(setProduct(res.data.data || []));
       } catch (err) {
@@ -104,7 +104,7 @@ const AdminProducts = () => {
       });
 
       const res = await axios.put(
-        `${import.meta.env.VITE_URL}/product/updateProduct/${editProduct.id}`,
+        `/product/updateProduct/${editProduct.id}`,
         formData
       );
 
@@ -143,7 +143,7 @@ const AdminProducts = () => {
   const deleteProductHandler = async (productId) => {
     try {
       const res = await axios.delete(
-        `${import.meta.env.VITE_URL}/product/removeProduct/${productId}`,
+        `/product/removeProduct/${productId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
