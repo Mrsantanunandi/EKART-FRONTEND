@@ -43,7 +43,7 @@ export default function SignUp() {
 
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_URL}/user/register`,
+        "/user/register",
         formData,
         {
           headers: {
