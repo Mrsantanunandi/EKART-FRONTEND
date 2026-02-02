@@ -54,7 +54,8 @@ export default function SignUp() {
 
       // ✅ SUCCESS CASE
       toast.success(res.data.message);
-      Navigate("/verify");
+      //Navigate("/verify"); For email on this
+      Navigate("/login");
 
     } catch (error) {
       const message =
