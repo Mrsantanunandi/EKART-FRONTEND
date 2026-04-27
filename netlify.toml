@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/api/*"
+  to = "http://ekart-backend-env.eba-7nmyz7pu.eu-north-1.elasticbeanstalk.com/:splat"
+  status = 200
+  force = true
