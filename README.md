@@ -11,12 +11,12 @@
 ## 🔗 Live Links
 
 **Frontend (Vercel)**
-👉 [https://ekart-frontend-kappa.vercel.app/](https://ekart-frontend-kappa.vercel.app/)
+👉 [https://frolicking-starburst-33437b.netlify.app/](https://frolicking-starburst-33437b.netlify.app/)
 
 **Backend API**
 ✅ Deployed on **AWS Elastic Beanstalk**
 ✅ Also deployed on **Railway**
-🔄 **Currently connected and running via Railway backend**
+🔄 **Currently connected and running via AWS ELASTIC BEANSTALK backend**
 
 ---
 
@@ -52,7 +52,7 @@ This project demonstrates real-world implementation of **authentication**, **aut
 * Razorpay Payment Gateway
 * Cloudinary Image Storage
 * **AWS Elastic Beanstalk**
-* **Railway (currently active backend)**
+
 
 ---
 
