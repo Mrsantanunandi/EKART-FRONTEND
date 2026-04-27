@@ -7,7 +7,8 @@ import { clearCart } from "@/redux/productSlice";
 import { persistor } from "@/redux/store";
 
 const axiosWithJwt = axios.create({
-  baseURL: "https://ekart-backend-production.up.railway.app"
+  // baseURL: "https://ekart-backend-production.up.railway.app"
+  baseURL: "http://ekart-backend-env.eba-7nmyz7pu.eu-north-1.elasticbeanstalk.com/"
 });
 
 // ================= REQUEST INTERCEPTOR =================
